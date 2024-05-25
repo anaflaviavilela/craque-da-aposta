@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body::before {
+    content: "";
+    background-image: url('../imagens/capa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2; /* Coloca a imagem de fundo atrás de tudo */
+}
+
+body::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7); /* Sobreposição preta */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /* Coloca a sobreposição atrás do conteúdo mas na frente da imagem */
+}
+
+.navbar{
+    display: flex;
+    padding: 1.5rem 3rem 0 2rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand, i{
+    color: white; /* Define a cor do texto */
+    font-size: 24px; /* Define o tamanho do texto */
+    text-decoration: none; /* Remove a decoração de texto padrão */
+}
+
+.icones {
+    display: flex; 
+    gap: 1rem;
+}
+
+.navbar-brand:hover {
+    color: lightgray; /* Altera a cor do texto ao passar o mouse sobre a logotipo */
+}
+
+.nav-icon {
+    color: white;
+}
+
+.nav-icon:hover > i {
+    transform: scale(1.4);
+}
+
+.nav-icon:hover > .fa-whatsapp {
+    color: green;
+}
+
+.nav-icon:hover > .fa-instagram {
+    color: rgb(165, 78, 136);
+    
+}
+
+.nav-icon:hover > .fa-telegram {
+    color: rgb(97, 158, 250);
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+    width: 300px; /* Largura do formulário */
+    margin: auto; /* Centralizar o formulário na tela */
+    padding-top: 180px; /* Espaçamento superior */
+    animation: slideIn 1s ease forwards; /* Aplica a animação de entrada */
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateX(-500%); /* Começa fora da tela à esquerda */
+    }
+    to {
+        transform: translateX(0); /* Move para a posição final */
+    }
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre os campos de entrada */
+}
+
+input[type="email"],
+input[type="password"] {
+	color: antiquewhite;
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-bottom: 1px solid black; /* Adiciona uma linha preta na parte inferior */
+    outline: none; /* Remove o contorno quando focado */
+    background-color: transparent; /* Remove o fundo */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 1px solid #18407b; /* Muda a cor da linha quando focado */
+}
+
+.btn-submit {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    background-color: #18407b; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+.btn-submit:hover {
+    background-color: #0e2548; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.register-link {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Espaçamento superior */
+    color: white; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.register-link a {
+    color: #18407b; /* Cor do link */
+    text-decoration: none; /* Remove a decoração de link padrão */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}

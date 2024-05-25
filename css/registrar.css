@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body::before {
+    content: "";
+    background-image: url('../imagens/capa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar-container-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    margin-left: 20px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.register-form {
+    width: 300px;
+    margin: auto;
+    padding-top: 180px;
+    animation: slider 1s ease-out; /* Adiciona a animação de slider */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    color: antiquewhite;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-bottom: 1px solid #18407b;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #18407b;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0e2548;
+}
+
+/* Adiciona a animação slider */
+@keyframes slider {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para o formulário de registro */
+.register-form {
+    width: 300px; /* Largura do formulário */
+    margin: auto; /* Centralizar o formulário na tela */
+    padding-top: 140px; /* Espaçamento superior */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre os campos de entrada */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    color: antiquewhite;
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-bottom: 1px solid black; /* Adiciona uma linha preta na parte inferior */
+    outline: none; /* Remove o contorno quando focado */
+    background-color: transparent; /* Remove o fundo */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-bottom: 1px solid #18407b; /* Muda a cor da linha quando focado */
+}
+
+.btn-submit {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    background-color: #18407b; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+.btn-submit:hover {
+    background-color: #0e2548; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.register-link {
+    color: #ffff;
+    font-size: 14px;
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.register-link a {
+    color: #18407b; /* Cor do link */
+    text-decoration: none; /* Remove a decoração do link */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

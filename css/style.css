@@ -119,9 +119,41 @@ input[type="password"]:focus {
     cursor: pointer; /* Cursor ao passar o mouse */
 }
 
-.btn-submit:hover {
-    background-color: #0e2548; /* Cor de fundo do botão ao passar o mouse */
+.btn-info-one{
+	box-sizing: border-box;
+	transition: all 0.7s ease;
+	position: relative;
+	cursor: pointer;
+	border: solid 1px transparent;
+	color: white;
 }
+
+.btn-info-one {
+	margin-right: 10px;
+	background-color: #18407b;
+}
+
+.btn-info-one:before {
+	content: '';
+	position: absolute;
+	background-color: white;
+	transition: all 0.7s ease;
+	z-index: -1;
+}
+
+.btn-info-one:hover  {
+	background-color: transparent;
+	color: white;
+	border: solid 1px white;
+}
+
+.btn-info-one:hover:before {
+	left: 100%;
+}
+
+/* .btn-submit:hover {
+    background-color: #0e2548; 
+} */
 
 .register-link {
     text-align: center; /* Alinha o texto ao centro */

@@ -1,3 +1,4 @@
+// ICONES HEADER
 document.addEventListener('DOMContentLoaded', (event) => {
     const telegram = document.querySelector('.fa-telegram');
     
@@ -13,3 +14,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         window.open('https://www.instagram.com/grangeirobet/', '_blank');
     });
 });
+
+
